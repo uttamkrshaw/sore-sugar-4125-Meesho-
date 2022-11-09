@@ -1,11 +1,16 @@
+body{
+    margin: 0px;
+}
 #header{
-   
+   border: 0px solid red;
     position: fixed;
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 150px;
     background-color: white;
+    /* margin-bottom: 150px; */
+    /* z-index: -1; */
 }
 #header_left>p{
     font-size: 100px;
@@ -35,6 +40,6 @@ a{
 
 #header_left>img{
     width: 30%;
-    margin-left: 40px;
+    margin-left: 140px;
   
 }

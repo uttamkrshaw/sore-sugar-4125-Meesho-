@@ -1,0 +1,101 @@
+body{
+    font-family: Neue-Helvetica, Helvetica, Arial, "sans-serif";
+   
+}
+#container{
+    padding: 150px 0px 0px 0px;
+
+}
+#details{
+    width: 70%;
+    display: flex;
+    margin-top: 0px; 
+    border: 0px solid blue;
+    margin-top: 0px;
+}
+#left-details{
+    width: 42%;
+    margin: auto;
+    margin-left: 180px;
+}
+#right-details{
+    width: 42%;
+   margin-left: 10px;
+    /* margin:auto; */
+    margin-top: 155px;
+}
+input,select{
+    width: 90%;
+        width: 100%;
+        padding: 12px 17px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid rgb(123,125,124);
+        font-size: 10px;
+      color: rgb(123,125,124);
+}
+label{
+    font-size: 10px;
+    color: rgb(123,125,124)
+}
+#left-details>#email-accept{
+    margin-left: -20px;
+}
+#left-details>button{
+    width: 100%;
+    padding: 9px;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+#left-details>h3{
+    margin-bottom: 80px;
+    font-size: 18px;
+}
+#footer{
+    margin-top: 150px;
+    display: flex;
+    width: 60%;
+    margin-left: 180px;
+}
+#footer>div{
+    width: 23%;
+    margin-top: 10px;
+    color: rgb(63,63,63);
+    
+}
+#footer>div>p{
+    margin-top: 10px;
+    font-size: 10px;
+    color: rgb(123,125,124)
+}
+#footer>div>p>a{
+    color: rgb(123,125,124)
+}
+
+#footer>div>h4{
+    font-size: 12px;
+}
+#india{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-left: 180px;
+    color: rgb(123,125,124);
+    font-size: 10px;
+}
+#footer-last{
+    width: 40%;
+    margin-top: 100px;
+    margin-left: 180px;
+    color: rgb(123,125,124);
+    font-size: 10px;
+    margin-bottom: 100px;
+}
+#footer-last>p{
+    margin-bottom: 5px;
+}

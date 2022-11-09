@@ -77,7 +77,6 @@ const Login = async () => {
 
     let input_username = login_form.username.value;
     let input_password = login_form.password.value;
-    //console.log(input_username, input_password);
     let { token } = await user.login(input_username, input_password);
     getProfile(input_username, token);
 

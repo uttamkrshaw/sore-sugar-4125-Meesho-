@@ -5,7 +5,6 @@ let head=document.getElementById("header");
 head.innerHTML=navbar();
 //console.log(navbar())
 
-
 class User {
     constructor() {
 
@@ -45,12 +44,6 @@ class User {
             const data_response = await response.json();
             console.log('data: ', data_response);
 
-            if(data_response.error == 'false'){
-                window.location.href='login.html';
-            }else{
-                alert('USER ALREADY EXISTS !');
-            }
-
         }
     }
 }
@@ -60,7 +53,6 @@ let user = new User();
 
 
 const Register = () => {
-
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
     let username = document.getElementById('name').value;
@@ -78,8 +70,9 @@ const Register = () => {
     }else{
         alert('CHECK YOUR PASSWORD !')
     }
+
+   
 };
 
 let button = document.getElementById('btn');
 button.addEventListener('click',Register);
-

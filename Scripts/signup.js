@@ -44,6 +44,12 @@ class User {
             const data_response = await response.json();
             console.log('data: ', data_response);
 
+            if(data_response.error == 'false'){
+                window.location.href='login.html';
+            }else{
+                alert('USER ALREADY EXISTS !');
+            }
+
         }
     }
 }

@@ -5,6 +5,7 @@ let head=document.getElementById("header");
 head.innerHTML=navbar();
 //console.log(navbar())
 
+
 class User {
     constructor() {
 
@@ -81,3 +82,4 @@ const Register = () => {
 
 let button = document.getElementById('btn');
 button.addEventListener('click',Register);
+

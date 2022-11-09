@@ -72,23 +72,6 @@ class User {
 
 let user = new User();
 
-// THIS IS FOR REGISTRATION
-
-// const Register = () => {
-
-//     const reg_form = document.getElementById('reg_form');
-
-//     let name = reg_form.name.value;
-//     let email = reg_form.email.value;
-//     let username = reg_form.username.value;
-//     let password = reg_form.password.value;
-//     let mobile = reg_form.mobile.value;
-//     let description = reg_form.description.value;
-
-//     user.singUp(name, email, username, password, mobile, description);
-//     console.log('user: ', user);
-// };
-
 const Login = async () => {
     const login_form = document.getElementById('login-info');
 

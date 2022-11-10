@@ -1,38 +1,101 @@
-#header{
+
+
+#threeDot{
+    width: 10%;
+    height: 10%;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
+#logo{
+    width: 50%;
+  
+}
+
+#cancelLogo{
+display: none;
+width: 8%;
+height: 10%;
+cursor: pointer;
+
+/* border: 1px solid red; */
+}
+#main{
+display: flex;
+justify-content: space-between;
+
+/* border: 1px solid black; */
+}
+
+
+#containerData{
+/* border: 1px solid red; */
+width: 40%;
+border-radius: 10px;
+/* background-color: white; */
+}
+#Container1{
+    display: none;
    
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+   
+}
+a{
+text-decoration: none;
+color: black;
+padding: 5px;
+font-size: 12px;
+font-family: Neue-Helvetica, Helvetica, Arial, "sans-serif";
+margin-left: 20px;
+
+}
+
+#women-Contents{
+display: grid;
+}
+#man-Contents{
+
+display: none;
+
+}
+#kids-Contents{
+display: none;
+}
+
+#header{
+
+position: fixed;
+display: flex;
+justify-content: space-between;
+width: 100%;
+font-family: Neue-Helvetica, Helvetica, Arial, "sans-serif";
+/* border: 1px solid yellow; */
 }
 #header_left>p{
-    font-size: 100px;
-    font: Linotype Didot Pro Bold;
-    padding: 10px;
-    
+font-size: 100px;
+font: Linotype Didot Pro Bold;
+padding: 10px;
+
 }
 #header_right{
-   
-   
-   display: flex;
-   justify-content: space-evenly;
-   width: 25%;
-   margin-top: 30px;
-   height: 10%;
-  
-}
 
 
-a{
-    color: black;
-    text-decoration: none;
-    width: 40%;
-    
+display: flex;
+justify-content: space-evenly;
+width: 25%;
+margin-top: 20px;
+height: 10%;
+/* border: 1px solid red; */
+padding: 2px;
 
 }
 
-#header_left>img{
-    width: 30%;
-    margin-left: 40px;
-  
+
+button{
+    font-size: 12px;
+}
+
+#header_right p{
+    font-size: 13px;
+    font-weight:100;
 }

@@ -1,10 +1,14 @@
 body {
     font-family: Neue-Helvetica, Helvetica, Arial, "sans-serif";
+    padding: 0%;
+    margin: 0%;
 
 }
 
+
 #container {
     padding: 150px 0px 0px 0px;
+    border: 0px solid green;
 
 }
 
@@ -12,7 +16,7 @@ body {
     width: 70%;
     display: flex;
     margin-top: 0px;
-    border: 0px solid blue;
+    border: 1px solid blue;
     margin-top: 0px;
 }
 
@@ -146,6 +150,6 @@ margin-left: 180px;
 #register{
 width: 30%;
 }
-a{
+#btn a{
     color: white;
 }

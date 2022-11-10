@@ -1,7 +1,15 @@
-import { navbar } from "../Components/navbar.js";
-
+import { navbar  } from "../Components/navbar.js";
+import { dropdown  } from "../Components/dropdown.js";
 let navbar_div = document.getElementById('header');
 navbar_div.innerHTML=navbar();
+
+
+
+let dropdownbtn=document.querySelector("#threedot")
+dropdownbtn.innerHTML=dropdown()
+
+
+
 
 // login function
 class User {

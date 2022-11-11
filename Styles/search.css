@@ -15,6 +15,7 @@
     margin: auto;
     margin-top: 0px;
     justify-content: space-between;
+    font-size: 10px;
 }
 
 #input_tag{
@@ -78,4 +79,42 @@
     font-size: 10px;
     margin-bottom: 100px;
      
+}
+#products{
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    margin: auto;
+}
+.image_s{
+    width:200px;
+    height: 300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.title{
+    font-size: 10px;
+}
+.prc{
+    font-size: 10px;
+}
+.flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.card{
+   padding-top: 50px;
+    margin: auto;
+    
+}
+#filt{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 50px;
+}
+#filt>#price_filter{
+    padding: 8px;
 }

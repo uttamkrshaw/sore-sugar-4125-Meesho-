@@ -3,6 +3,9 @@ import {navbar} from "../Components/navbar.js"
 let header=document.querySelector("#header")
 header.innerHTML=navbar()
 // console.log(navbar());
+document.getElementById("logo").onclick=()=>{
+    window.location.href="index.html" 
+}
 
 
 async function searchTerm(){
@@ -62,7 +65,8 @@ function appendData(data){
         img.src=el.image;
         img.className="image_s";
         img.addEventListener("click",()=>{
-            addToCart(el,i);
+            addToCart(el)
+           
             window.location.href="cartproductinfo.html"
         })
 
@@ -87,7 +91,7 @@ function appendData(data){
 let searchFun=document.getElementById("mysearch");
 
 searchFun.addEventListener("input",function(){
-    debouncing(searchTerm,1000);
+    debouncing(searchTerm(),1000);
 })
 
 let id;
@@ -104,7 +108,7 @@ function debouncing(func,delay){
 
 }
 
-function addToCart(el,i){
+function addToCart(el){
 
     let cartData=[];
     cartData.push(el);

@@ -108,9 +108,13 @@ border: 0px solid red;
 #main>#payMethod>div{
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+}
+#main>#payMethod>div:hover{
+    border: 1px solid gray;
 }
 #main>#payMethod>div>img{
-    width: 65%;
+    width: 60%;
 }
 #main>#payMethod>div>p{
     font-size: 11px;
@@ -126,7 +130,10 @@ border: 0px solid red;
     margin-top: 20px;
 }
 #main>#payOffer>div>img{
-    width: 65%;
+    width: 60%;
+}
+#main>#payOffer>div:hover{
+    border: 1px solid gray;
 }
 #main>#payOffer>div{
     text-align: center;

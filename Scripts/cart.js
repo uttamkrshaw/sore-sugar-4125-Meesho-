@@ -1,9 +1,10 @@
 let Cdata=JSON.parse(localStorage.getItem("bag"))||[];
-
+console.log(Cdata)
 let totalCart=Cdata.length;
 
 let bag=document.getElementById("num");
 bag.innerText=+totalCart;
+
 
 function appendData(data){
     // console.log(data)
@@ -15,6 +16,7 @@ function appendData(data){
         console.log(el)
         let div=document.createElement("div");
         div.className="card"
+        
 
         let img=document.createElement("img");
         img.src=el.image;
@@ -29,14 +31,16 @@ function appendData(data){
 
         let p_price=document.createElement("p");
         p_price.innerText=el.price;
-        p_price.className="prc"
+        p_price.className="prc";
 
         let myp_div=document.createElement("div");
         myp_div.className="flex";
         myp_div.append(p_price)
-        div.append(p_name,img,myp_div);
+           div.append(p_name,img,myp_div);
 
         products_div.append(div);
+
+       
 
     })
 }
@@ -53,3 +57,22 @@ function movetoPayment(){
 
     window.location.href="payment.html"
 }
+
+
+
+
+let Price=0
+function price(data){
+    data.forEach(function(el){
+        
+       
+        Price=Price+el.price
+       
+        console.log(Price)   
+         document.getElementById("total_price").innerHTML=Price
+    })
+}
+
+
+
+price(Cdata)

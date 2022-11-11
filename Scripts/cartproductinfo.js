@@ -1,6 +1,7 @@
 let Cdata=JSON.parse(localStorage.getItem("cart"))||[];
 
 let Cardata=JSON.parse(localStorage.getItem("bag"))||[];
+console.log("Cardata",Cardata)
 
 let totalCart=Cardata.length;
 
@@ -67,7 +68,10 @@ function appendData(data){
         btn.style.padding="10px"
         btn.style.marginTop="70px"
         btn.addEventListener("click",function(){
-            moveToCart(el,i);
+        
+        moveToCart(el)
+
+
         })
 
 
@@ -82,10 +86,15 @@ function appendData(data){
 
 appendData(Cdata);
 
-function moveToCart(el,i){
-    let cArr=JSON.parse(localStorage.getItem("cart"))||[];
-    cArr.push(el);
-
-    localStorage.setItem("bag",JSON.stringify(cArr));
+function moveToCart(el){
+    
+    let Cardata=JSON.parse(localStorage.getItem("bag"))||[];
+    Cardata.push(el)
+console.log(Cardata)
+    localStorage.setItem("bag",JSON.stringify(Cardata));
+ 
+    
+   
+    
     window.location.href="cart.html";
 }

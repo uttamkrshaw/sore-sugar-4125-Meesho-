@@ -1,9 +1,9 @@
 let Cdata=JSON.parse(localStorage.getItem("cart"))||[];
 
-let Cardata=JSON.parse(localStorage.getItem("bag"))||[];
-console.log("Cardata",Cardata)
+let Cartdata=JSON.parse(localStorage.getItem("bag"))||[];
+console.log("Cartdata",Cartdata)
 
-let totalCart=Cardata.length;
+let totalCart=Cartdata.length;
 
 let bag=document.getElementById("num");
 bag.innerText=+totalCart;
@@ -86,15 +86,15 @@ function appendData(data){
 
 appendData(Cdata);
 
-function moveToCart(el){
+const moveToCart=(el)=>{
+
     
-    let Cardata=JSON.parse(localStorage.getItem("bag"))||[];
-    Cardata.push(el)
-console.log(Cardata)
-    localStorage.setItem("bag",JSON.stringify(Cardata));
- 
     
+    let  Cartdata=JSON.parse(localStorage.getItem("bag"))||[];
    
-    
+    Cartdata.push(el)
+    localStorage.setItem("bag",JSON.stringify(Cartdata));
+
+ 
     window.location.href="cart.html";
 }

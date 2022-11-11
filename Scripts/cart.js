@@ -36,7 +36,14 @@ function appendData(data){
         let myp_div=document.createElement("div");
         myp_div.className="flex";
         myp_div.append(p_price)
-           div.append(p_name,img,myp_div);
+
+        let Delete= document.createElement("button")
+        Delete.innerHTML="Delete"
+        Delete.onclick=()=>{
+            deleteFunc(i)
+        }
+
+           div.append(p_name,img,myp_div,Delete);
 
         products_div.append(div);
 
@@ -76,3 +83,14 @@ function price(data){
 
 
 price(Cdata)
+
+
+const deleteFunc =(i)=>{
+Cdata.splice(i,1)
+localStorage.setItem("bag",JSON.stringify(Cdata))
+window.location.reload();
+
+console.log(i)
+}
+
+

@@ -67,3 +67,15 @@ function UPI(){
 
     window.location.href="visacard.html"
 }
+
+let Cdata=JSON.parse(localStorage.getItem("bag"))||[];
+
+let Price=0
+function price(data){
+    data.forEach(function(el){
+        Price=Price+el.price
+        console.log(Price)
+         document.getElementById("total_price").innerHTML=Price
+    })
+}
+price(Cdata)

@@ -5,7 +5,7 @@ header.innerHTML=navbar()
 // console.log(navbar());
 
 
-async function searchTerm(){
+async function searchTerm(sortLH){
 
     let search=document.getElementById("mysearch").value;
     try{
@@ -43,6 +43,22 @@ function filter(data){
             dataArr.push(el);
         }
     })
+    //console.log(dataArr)
+    let sortFunction=document.getElementById("price_filter");
+    sortFunction.addEventListener("change", sortLH);
+
+    function sortLH(){
+        //console.log("data",dataArr)
+        let val=document.getElementById("price_filter").value;
+        console.log(val)
+        if(val=="high"){
+                dataArr.sort((a,b)=>b.price-a.price); 
+        }else{
+            dataArr.sort((a,b)=>a.price-b.price);
+        }
+        appendData(dataArr);
+        }
+
 
     appendData(dataArr);
 }
@@ -54,7 +70,7 @@ function appendData(data){
     products_div.innerHTML=null;
 
     data.forEach((el,i)=>{
-        console.log(el)
+        //console.log(el)
         let div=document.createElement("div");
         div.className="card"
 
@@ -81,7 +97,10 @@ function appendData(data){
 
         products_div.append(div);
 
-    })
+ 
+    });
+
+
 }
 
 let searchFun=document.getElementById("mysearch");
@@ -112,3 +131,10 @@ function addToCart(el,i){
     localStorage.setItem("cart",JSON.stringify(cartData));
 
 }
+
+
+
+
+
+   
+

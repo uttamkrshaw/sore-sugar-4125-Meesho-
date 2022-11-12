@@ -3,7 +3,9 @@ import { dropdown  } from "../Components/dropdown.js";
 let navbar_div = document.getElementById('header');
 navbar_div.innerHTML=navbar();
 
-
+document.getElementById("logo").onclick=()=>{
+    window.location.href="index.html" 
+}
 
 let dropdownbtn=document.querySelector("#threedot")
 dropdownbtn.innerHTML=dropdown()

@@ -17,7 +17,7 @@ masterCard.addEventListener("click",function(){
 
 function master(){
 
-    window.location.href="visacard.html"
+    window.location.href="mastercard.html"
     // let img=document.getElementById("myimg");
     // img.innerHTML=null;
     

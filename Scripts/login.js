@@ -7,9 +7,8 @@ document.getElementById("logo").onclick=()=>{
     window.location.href="index.html" 
 }
 
-let dropdownbtn=document.querySelector("#threedot")
-dropdownbtn.innerHTML=dropdown()
-
+// let dropdownbtn=document.getElementById("threedot")
+// dropdownbtn.innerHTML=dropdown()
 
 
 

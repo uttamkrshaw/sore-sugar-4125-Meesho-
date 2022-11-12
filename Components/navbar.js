@@ -82,7 +82,7 @@ const navbar = ()=> {
     <div id="header_right">
 
 
-    <a href="search.html"><p>SEARCH</p></a>
+    <a id="search" href="search.html"><p>SEARCH</p></a>
 
 
 

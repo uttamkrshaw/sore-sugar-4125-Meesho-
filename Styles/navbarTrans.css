@@ -39,6 +39,7 @@ border-radius: 10px;
 }
 #Container1{
     display: none;
+    height: 500px;
    
    
 }
@@ -101,3 +102,8 @@ button{
     font-size: 13px;
     font-weight:100;
 }
+#search{
+    width: 30%;
+    border-bottom: 2px solid black;
+}
+

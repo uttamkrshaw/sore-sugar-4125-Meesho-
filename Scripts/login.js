@@ -7,8 +7,8 @@ document.getElementById("logo").onclick=()=>{
     window.location.href="index.html" 
 }
 
-let dropdownbtn=document.querySelector("#threedot")
-dropdownbtn.innerHTML=dropdown()
+//let dropdownbtn=document.querySelector("#threedot")
+//dropdownbtn.innerHTML=dropdown()
 
 
 
@@ -110,6 +110,7 @@ const getProfile = async (username, token) => {
 
     let data = await response.json();
     console.log('get profile data :', data);
+    localStorage.setItem('login_data',JSON.stringify(data));
     window.location.href='index.html';
 
 }

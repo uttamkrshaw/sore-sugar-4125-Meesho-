@@ -1,4 +1,4 @@
-let Cdata=JSON.parse(localStorage.getItem("cart"))||[];
+let Cdata=JSON.parse(localStorage.getItem("cart"));
 
 let Cartdata=JSON.parse(localStorage.getItem("bag"))||[];
 console.log("Cartdata",Cartdata)

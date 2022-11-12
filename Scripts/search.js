@@ -137,8 +137,9 @@ function addToCart(el){
 }
 
 
+let login_data = JSON.parse(localStorage.getItem('login_data'));
 
-
-
+let login_logo = document.getElementById('loginID');
+login_logo.innerText=login_data.username;
    
 

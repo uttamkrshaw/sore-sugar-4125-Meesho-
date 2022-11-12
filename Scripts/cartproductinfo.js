@@ -68,9 +68,8 @@ function appendData(data){
         btn.style.padding="10px"
         btn.style.marginTop="70px"
         btn.addEventListener("click",function(){
-        
-        moveToCart(el)
 
+            moveToCart(el);
 
         })
 
@@ -88,6 +87,7 @@ appendData(Cdata);
 
 const moveToCart=(el)=>{
 
+
     
     
     let  Cartdata=JSON.parse(localStorage.getItem("bag"))||[];
@@ -96,5 +96,6 @@ const moveToCart=(el)=>{
     localStorage.setItem("bag",JSON.stringify(Cartdata));
 
  
+
     window.location.href="cart.html";
 }

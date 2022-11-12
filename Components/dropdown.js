@@ -22,6 +22,7 @@ function dropdown(){
         document.querySelector("#women-Contents").style.display="grid"
         document.querySelector("#btn0").style.fontSize ="16px"
         document.querySelector("#btn1").style.fontSize ="12px"
+        document.querySelector("#btn2").style.fontSize ="12px"
     
     })
     document.querySelector("#btn1").addEventListener("click",function(){
@@ -32,6 +33,7 @@ function dropdown(){
     document.querySelector("#man-Contents").style.display="grid"
     document.querySelector("#btn1").style.fontSize ="16px"
     document.querySelector("#btn0").style.fontSize ="12px"
+    document.querySelector("#btn2").style.fontSize ="12px"
     })
     
     
@@ -43,6 +45,9 @@ function dropdown(){
         document.querySelector("#man-Contents").style.display="none"
     document.querySelector("#kids-Contents").style.display="block"
     document.querySelector("#kids-Contents").style.display="grid"
+    document.querySelector("#btn0").style.fontSize ="12px"
+    document.querySelector("#btn1").style.fontSize ="12px"
+    document.querySelector("#btn2").style.fontSize ="16px"
     })
 }
 

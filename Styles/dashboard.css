@@ -1,0 +1,16 @@
+body{
+    display: flex;
+}
+
+#options{
+display: flex;
+flex-direction: column;
+gap: 50px;
+padding-left: 30px;
+padding-right: 30px;
+border: 1px solid red;
+}
+
+#display{
+    display: flex;
+}

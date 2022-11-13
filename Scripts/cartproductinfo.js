@@ -39,7 +39,7 @@ function appendData(data){
         myp_div.className="flex";
 
         let p_det=document.createElement("p");
-        p_det.innerText="High-waist Bermuda shorts with front dart details. Front pockets and rear false flap pocket. Front zip fly, interior button and metal hook fastening.";
+        p_det.innerText=el.description;
         p_det.className="text"
         p_det.style.marginTop="20px";
         p_det.style.fontSize="12px"

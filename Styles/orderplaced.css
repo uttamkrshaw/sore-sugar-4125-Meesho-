@@ -1,0 +1,27 @@
+body{
+    background-image:url("https://media.istockphoto.com/id/1287182265/photo/close-up-on-group-of-gold-color-of-rolling-ribbon-and-confetti-on-teal-background-with-copy.jpg?s=612x612&w=0&k=20&c=3ohPkzkkWzy055rAQUZe9YPJnb6HasJiBy6Y6uaiAFw=");
+}
+#congrates{
+    width: 50%;
+    text-align: center;
+    border: 0px solid rgb(14, 14, 39);
+    line-height: 30px;
+   
+    margin:200px 200px 200px 400px ;
+}
+#congrates>h1{
+    color: rgb(38, 38, 70);
+    font-weight:900;
+    font-size: 50px;
+}
+#congrates>h2{
+    color: rgb(114, 103, 103);
+}
+button{
+    padding: 20px;
+    border: 0px;
+    background-color: rgb(98, 91, 91);
+    color: white;
+    border-radius: 10px;
+    width: 20%;
+}

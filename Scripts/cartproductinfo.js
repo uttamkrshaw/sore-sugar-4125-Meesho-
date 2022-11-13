@@ -52,10 +52,40 @@ function appendData(data){
         let p_size=document.createElement("hr");
         p_size.style.marginTop="20px";
 
-        let choose_size=document.createElement("select");
-        let o1=document.createElement("option");
-        o1.innerText="XL"
-        choose_size.innerHTML=o1;
+        let mySize=document.createElement("p");
+        mySize.innerText="CHOOSE YOUR SIZE";
+        mySize.style.fontSize="13px";
+
+        let choose_size1=document.createElement("p");
+        choose_size1.innerText="X";
+        choose_size1.style.marginTop="8px"
+        let inpu1=document.createElement("input");
+        inpu1.type="checkbox"
+
+        let choose_size2=document.createElement("p");
+        choose_size2.innerText="XL";
+        choose_size2.style.marginTop="8px"
+        let inpu2=document.createElement("input");
+        inpu2.type="checkbox"
+       
+        let choose_size3=document.createElement("p");
+        choose_size3.innerText="XXL";
+        choose_size3.style.marginTop="8px"
+        let inpu3=document.createElement("input");
+        inpu3.type="checkbox"
+
+        let choose_size4=document.createElement("p");
+        choose_size4.innerText="L";
+        choose_size4.style.marginTop="8px"
+        let inpu4=document.createElement("input");
+        inpu4.type="checkbox"
+
+        let choose_size5=document.createElement("p");
+        choose_size5.innerText="M";
+        choose_size5.style.marginTop="10px"
+        let inpu5=document.createElement("input");
+        inpu5.type="checkbox"
+
 
         let p_size2=document.createElement("hr");
         p_size2.style.marginTop="20px";
@@ -66,7 +96,7 @@ function appendData(data){
         btn.style.color="white";
         btn.style.width="100%";
         btn.style.padding="10px"
-        btn.style.marginTop="70px"
+        btn.style.marginTop="40px"
         btn.addEventListener("click",function(){
 
             moveToCart(el);
@@ -77,7 +107,7 @@ function appendData(data){
         myp_div.append(p_price)
         div.append(img);
 
-        priceDetails_div.append(p_name,p_det, p_col, p_price,p_size,choose_size,p_size2,btn)
+        priceDetails_div.append(p_name,p_det, p_col, p_price,p_size,mySize,choose_size1,inpu1,choose_size2,inpu2,choose_size3,inpu3,choose_size4,inpu4,choose_size5,inpu5, p_size2,btn)
         products_div.append(div);
 
     })

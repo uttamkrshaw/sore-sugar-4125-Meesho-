@@ -17,6 +17,7 @@ function appendData(data){
         let div=document.createElement("div");
         div.className="card"
         
+        
 
         let img=document.createElement("img");
         img.src=el.image;
@@ -30,8 +31,10 @@ function appendData(data){
         p_name.className="title";
 
         let p_price=document.createElement("p");
-        p_price.innerText=el.price;
+        p_price.innerText="₹ "+el.price;
         p_price.className="prc";
+        p_price.style.marginTop="5px"
+        p_price.style.marginLeft="130px";
 
         let myp_div=document.createElement("div");
         myp_div.className="flex";
@@ -39,7 +42,13 @@ function appendData(data){
 
 
         let Delete= document.createElement("button")
-        Delete.innerHTML="Delete"
+        Delete.innerHTML="Delete";
+        Delete.style.margin="auto";
+        Delete.style.marginTop="10px"
+        Delete.style.padding="10px"
+        Delete.style.width="100%"
+        Delete.style.border="0px"
+        Delete.style.backgroundColor="gray"
         Delete.onclick=()=>{
             deleteFunc(i)
         }

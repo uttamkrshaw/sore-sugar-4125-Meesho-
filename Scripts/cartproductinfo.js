@@ -129,3 +129,12 @@ const moveToCart=(el)=>{
 
     window.location.href="cart.html";
 }
+
+
+
+let login_data = JSON.parse(localStorage.getItem('login_data'));
+
+let login_logo = document.getElementById('loginID');
+login_logo.innerText=login_data.username;
+   
+

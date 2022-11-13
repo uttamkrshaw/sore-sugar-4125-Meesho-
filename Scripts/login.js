@@ -73,6 +73,8 @@ class User {
         console.log('login data: ', data);
         if(data.error='false'){
             alert('LOGIN SUCCESSFUL');
+           // window.location.href='search.html'
+            
         }
         return data
     }

@@ -15,7 +15,7 @@ const send_data = async() => {
     }
     //console.log(data);
 
-    let response = await fetch(`https://boiling-brook-19493.herokuapp.com/posts`,{
+    let response = await fetch(`https://cryptic-beach-27653.herokuapp.com/posts`,{
         method:"POST",
         body:JSON.stringify(data),
         headers:{

@@ -4,6 +4,22 @@ btn.addEventListener("click",()=>{
     press(); 
 })
 
-function press(){
+const press = async()=>{
+    let Cdata=JSON.parse(localStorage.getItem("bag"))
+
+    let response = await fetch(`https://cryptic-beach-27653.herokuapp.com/Orders`,{
+        method:"POST",
+        body:JSON.stringify(Cdata),
+        headers:{
+            'Content-Type':'application/json'
+        }
+    });
+    let response_data = await response.json();
+    console.log('data got from server', response_data);
+
+    console.log("bag data display ",Cdata);
+    localStorage.removeItem("bag");
+    //localStorage.clear();
+
     window.location.href="search.html"
 }

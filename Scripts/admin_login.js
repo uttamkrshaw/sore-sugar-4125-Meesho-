@@ -29,9 +29,9 @@ class User {
 let user = new User();
 
 const Login = async () => {
-    const login_form = document.getElementById('login_form');
-    let input_username = login_form.username.value;
-    let input_password = login_form.password.value;
+   // const login_form = document.getElementById('login_form');
+    let input_username = document.getElementById('Username').value;
+    let input_password = document.getElementById('Password').value;
     //console.log(input_username, input_password);
     let { token } = await user.login(input_username, input_password);
 
@@ -55,6 +55,7 @@ const getProfile = async (username, token) => {
 
     let data = await response.json();
     console.log('get profile data :', data);
+    window.location.href='admin_dashboard.html';
     // setting up the data in local storage to retrive it for further access
     localStorage.setItem('admin_data',JSON.stringify(data));
 }

@@ -1,5 +1,11 @@
 body{
     display: flex;
+    margin: 0%;
+    padding: 0%;
+    border: 0px solid green;
+    text-align: center;
+    margin-top: 40px;
+    
 }
 
 #options{
@@ -8,9 +14,41 @@ flex-direction: column;
 gap: 50px;
 padding-left: 30px;
 padding-right: 30px;
-border: 1px solid red;
+border: 1px solid rgb(190, 184, 184);
+
 }
 
 #display{
-    display: flex;
+    /* display: flex; */
+   
+    width:70%;
+    border: 1px solid rgb(190, 184, 184);
+}
+
+#display input{
+    width: 30%;
+    margin-left: 10%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: rgb(190, 184, 184);
+    color: white;
+}
+select{
+    width: 20%;
+    padding: 10px;
+    border: 1px solid rgb(190, 184, 184);
+    margin: 10px;
+
+}
+#send_data{
+    width: 10%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color:rgb(208, 199, 199) ;
+    color:black;
+    border: 0px;
+    border-radius: 10px;
+
 }

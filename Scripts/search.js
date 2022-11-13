@@ -91,7 +91,7 @@ function appendData(data){
         p_name.className="title";
 
         let p_price=document.createElement("p");
-        p_price.innerText=el.price;
+        p_price.innerText="₹ "+el.price;
         p_price.className="prc"
 
         let myp_div=document.createElement("div");

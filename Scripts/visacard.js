@@ -1,42 +1,37 @@
 let btn=document.getElementById("lastbtn");
 
 btn.addEventListener("click",function(){
-    cardValidate()
+    let cardnumber=document.getElementById("cardnumber").value;
+let cardHolder=document.getElementById("holder").value;
+let month=document.getElementById("month").value;
+let cvv=document.getElementById("CVV").value;
+let year=document.getElementById("year").value;
+    cardValidate(cardnumber,cardHolder,month,cvv,year)
     //console.log("new")
+    // window.location.reload();
 })
 
 
-
-function cardValidate(){
-    console.log("name")
-    let cardnumber=document.getElementById("cardnumber").value;
-    
-    if(cardnumber.length<16 || cardnumber.length>16){
-        alert("INVALID CARD")
+function cardValidate(cn,ch,m,cv,y){
+    //console.log(cn,ch,m,cv,y)
+    if(cn.length==16 && cv.length==3&& ch!==""&&m!==""&&y!==""){
+        // alert("Your order is placed")
+        window.location.href="orderplaced.html"
+    }else{
+        alert("check card details")
     }
-
-    let cardHolder=document.getElementById("holder").value;
-    let month=document.getElementById("month").value;
-    //console.log(month)
-
-    let cvv=document.getElementById("CVV").value;
-    if(cvv.length<3 || cvv.length>3){
-        alert("INVALID CVV")
-    }
-
-    let year=document.getElementById("year").value;
 
     let details={
-        cardnumber,
-        cardHolder,
-        month,
-        cvv,
-        year
+        cardnumber:cn,
+        cardHolder:ch,
+        month:m,
+        cvv:cv,
+        year:y,
     }
-
-    console.log(details);
+    //console.log("details",details)
+    localStorage.setItem("cardDetails",JSON.stringify(details));
+   
 }
-
 
 let Cdata=JSON.parse(localStorage.getItem("bag"))||[];
 

@@ -71,6 +71,8 @@ function appendData(data){
     let products_div=document.getElementById("products");
     let loader=document.getElementById("loader");
     loader.style.display="none"
+    let loader1=document.getElementById("loader1");
+    loader1.style.display="none"
     products_div.innerHTML=null;
     
     data.forEach((el,i)=>{

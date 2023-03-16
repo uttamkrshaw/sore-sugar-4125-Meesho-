@@ -157,6 +157,10 @@
     align-items: center;
     margin:10rem 0 0 40rem;
   }
+
+  #loader1{
+    margin:0 0 0 39rem;
+  }
   
   /* Safari */
   @-webkit-keyframes spin {

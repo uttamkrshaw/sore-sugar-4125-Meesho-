@@ -33,6 +33,8 @@
     
 }
 
+/* -------------------------------- Footer -------------------------- */
+
 #footer{
     border: 0px solid green;
     margin-top: 350px;
@@ -140,10 +142,7 @@
     padding: 8px;
 }
 
-
-
 /* ------------------- Loader --------------------- */
-
 #loader {
     border: 6px solid #f3f3f3;
     border-radius: 50%;

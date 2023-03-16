@@ -15,7 +15,7 @@ async function searchTerm(sortLH){
         
         //https://cryptic-beach-27653.herokuapp.com/posts
        // let response= await fetch(`https://boiling-brook-19493.herokuapp.com/posts?q=${search}`);
-        let response= await fetch(`https://cryptic-beach-27653.herokuapp.com/posts?q=${search}`);
+        let response= await fetch(`https://zara-project.onrender.com/data?q=${search}`);
         let data=await response.json();
         // console.log("data:",data)
 

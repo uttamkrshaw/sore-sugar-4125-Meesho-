@@ -48,7 +48,8 @@ border: 0px solid red;
     color: rgb(123,125,124)
 }
 #footer>div>p>a{
-    color: rgb(123,125,124)
+    color: rgb(123,125,124);
+    text-decoration: none;
 }
 
 #footer>div>h4{

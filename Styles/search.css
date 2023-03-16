@@ -2,12 +2,10 @@
     margin: 0px;
     padding: 0px;
 }
-
 #container{
     padding: 150px 0px 0px 0px;
 
 }
-
 #serach-items{
     border:0px solid red;
     display: flex;
@@ -23,7 +21,7 @@
     border: 0px solid red;
     margin: auto;
     margin-top: 150px;
-    /* margin-: 170px; */
+    
 }
 
 #input_tag input{
@@ -36,6 +34,7 @@
 }
 
 #footer{
+    border: 0px solid green;
     margin-top: 150px;
     display: flex;
     width: 60%;
@@ -45,12 +44,14 @@
     width: 23%;
     margin-top: 10px;
     color: rgb(63,63,63);
-    
+    /* border: 1px solid blue; */
 }
 #footer>div>p{
+    margin-left: -25px;
     margin-top: 10px;
     font-size: 10px;
-    color: rgb(123,125,124)
+    color: rgb(123,125,124);
+    /* border: 1px solid red; */
 }
 #footer>div>p>a{
     color: rgb(123,125,124)
@@ -58,6 +59,26 @@
 
 #footer>div>h4{
     font-size: 12px;
+}
+#india{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-left: 180px;
+    color: rgb(123,125,124);
+    font-size: 10px;
+}
+#footer-last{
+    width: 40%;
+    margin-top: 100px;
+    margin-left: 180px;
+    color: rgb(123,125,124);
+    font-size: 10px;
+    margin-bottom: 100px;
+}
+#footer-last>p{
+    margin-bottom: 5px;
 }
 
 
@@ -106,7 +127,6 @@
     margin: auto;
 }
 .card{
-    /* width: 20%; */
    padding-top: 50px;
     margin: auto;
     

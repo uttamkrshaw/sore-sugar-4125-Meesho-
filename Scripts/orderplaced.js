@@ -7,7 +7,7 @@ btn.addEventListener("click",()=>{
 const press = async()=>{
     let Cdata=JSON.parse(localStorage.getItem("bag"))
 
-    let response = await fetch(`https://cryptic-beach-27653.herokuapp.com/Orders`,{
+    let response = await fetch(`https://zara-project.onrender.com/data`,{
         method:"POST",
         body:JSON.stringify(Cdata),
         headers:{

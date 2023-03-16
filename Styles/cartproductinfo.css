@@ -8,6 +8,8 @@
   margin-left: 150px;
   height: 100%;
 }
+
+/* --------------- Header -------------------- */
 #header{
 position: fixed;
 display: flex;
@@ -30,6 +32,8 @@ border: 0px solid red;
     color: black;
     padding: 40px;
 }
+
+/*----------------- Footer ------------------------ */
 #footer{
     border: 0px solid green;
     margin-top: 150px;

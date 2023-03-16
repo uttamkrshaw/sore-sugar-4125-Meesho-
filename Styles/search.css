@@ -29,9 +29,9 @@
     border: none;
     border-bottom: 1px solid black;
     outline: none;
-   
-    
 }
+
+/* -------------------------------- Footer -------------------------- */
 
 #footer{
     border: 0px solid green;
@@ -81,7 +81,6 @@
     margin-bottom: 5px;
 }
 
-
 #footer-address1{
     width: 80%;
     display: flex;
@@ -89,8 +88,7 @@
     margin-top: 100px;
     margin-left: 180px;
     color: rgb(123,125,124);
-    font-size: 10px;
-    
+    font-size: 10px;  
 }
 #footer-address2{
     width: 40%;
@@ -140,10 +138,7 @@
     padding: 8px;
 }
 
-
-
 /* ------------------- Loader --------------------- */
-
 #loader {
     border: 6px solid #f3f3f3;
     border-radius: 50%;

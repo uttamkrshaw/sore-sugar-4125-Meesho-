@@ -17,7 +17,7 @@
 }
 
 #input_tag{
-    width: 80%;
+    width: 95%;
     border: 0px solid red;
     margin: auto;
     margin-top: 150px;
@@ -25,7 +25,7 @@
 }
 
 #input_tag input{
-    width: 90%;
+    width: 100%;
     border: none;
     border-bottom: 1px solid black;
     outline: none;

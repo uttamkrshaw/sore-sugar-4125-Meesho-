@@ -69,9 +69,10 @@ function filter(data){
 function appendData(data){
     // console.log(data)
     let products_div=document.getElementById("products");
-
+    let loader=document.getElementById("loader");
+    loader.style.display="none"
     products_div.innerHTML=null;
-
+    
     data.forEach((el,i)=>{
         //console.log(el)
         let div=document.createElement("div");

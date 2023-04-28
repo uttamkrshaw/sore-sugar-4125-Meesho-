@@ -8,23 +8,17 @@ btn.addEventListener("click",function(){
 
 
 function cardValidate(){
-    console.log("name")
     let cardnumber=document.getElementById("cardnumber").value;
-    
-    if(cardnumber.length<16 || cardnumber.length>16){
-        alert("INVALID CARD")
-    }
-
     let cardHolder=document.getElementById("holder").value;
     let month=document.getElementById("month").value;
-    //console.log(month)
-
     let cvv=document.getElementById("CVV").value;
-    if(cvv.length<3 || cvv.length>3){
+    let year=document.getElementById("year").value;
+
+    if(cardnumber.length<16 || cardnumber.length>16){
+        alert("INVALID CARD")
+    }else if(cvv.length<3 || cvv.length>3){
         alert("INVALID CVV")
     }
-
-    let year=document.getElementById("year").value;
 
     let details={
         cardnumber,
@@ -34,7 +28,7 @@ function cardValidate(){
         year
     }
 
-    console.log(details);
+    location.href="orderplaced.html"
 }
 
 let Cdata=JSON.parse(localStorage.getItem("bag"))||[];
@@ -53,6 +47,6 @@ price(Cdata)
 let login_data = JSON.parse(localStorage.getItem('login_data'));
 
 let login_logo = document.getElementById('loginID');
-login_logo.innerText=login_data.username;
+login_logo.innerText=login_data[0].username;
    
 

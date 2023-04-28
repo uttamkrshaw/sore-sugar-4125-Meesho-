@@ -6,20 +6,23 @@ btn.addEventListener("click",()=>{
 
 const press = async()=>{
     let Cdata=JSON.parse(localStorage.getItem("bag"))
+    let Udata = JSON.parse(localStorage.getItem("login_data"))
 
-    let response = await fetch(`https://zara-project.onrender.com/data`,{
+    let data = {
+        "User":Udata[0].username,
+        "Ordered Item":Cdata
+    }
+    console.log("order",data);
+
+    let response = await fetch(`http://localhost:3000/orders`,{
         method:"POST",
-        body:JSON.stringify(Cdata),
+        body:JSON.stringify(data),
         headers:{
             'Content-Type':'application/json'
         }
     });
     let response_data = await response.json();
-    console.log('data got from server', response_data);
-
-    console.log("bag data display ",Cdata);
     localStorage.removeItem("bag");
     //localStorage.clear();
-
     window.location.href="search.html"
 }

@@ -1,56 +1,36 @@
 import {navbar} from "../Components/navbar.js";
 
-let head=document.getElementById("header");
+let head = document.getElementById("header");
 
-head.innerHTML=navbar();
-//console.log(navbar())
+head.innerHTML = navbar();
 
-class User {
-    constructor() {
-
+const singUp = async (name, email, username, password, mobile, description, address, pin_code, city) => {
+    let userdata = {
+        name: name,
+        email: email,
+        username: username,
+        password: password,
+        mobile: mobile,
+        description: description,
+        address: address,
+        pin_code: pin_code,
+        city: city
     }
-
-    validateUsername(username) {
-        return username.includes('@') ? false : true;
-    }
-
-    validatePassword(password) {
-        return password.length >= 8 ? true : false;
-    }
-
-    async singUp(name, email, username, password, mobile, description,address,pin_code,city) {
-        let isValidated = this.validateUsername(username) && this.validatePassword(password);
-
-        if (isValidated) {
-            this.name = name;
-            this.email = email;
-            this.username = username;
-            this.password = password;
-            this.mobile = mobile;
-            this.description = description;
-            this.address =address;
-            this.pincode=pin_code;
-            this.city=city;
-            const register_api = `https://masai-api-mocker.herokuapp.com/auth/register`;
-
-            const response = await fetch(register_api, {
-                method: 'POST',
-                body: JSON.stringify(this),
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            });
-
-            const data_response = await response.json();
-            console.log('data: ', data_response);
-
+        
+        try {
+            let response = await fetch(`http://localhost:3000/userdata`, {
+            method: "POST",
+            body: JSON.stringify(userdata),
+            headers: {
+            "Content-Type": "application/json"
+                }
+            })
+            //response = await response.json()
+            location.replace("./login.html")
+        } catch (error) {
+            console.log(error);
         }
     }
-}
-
-
-let user = new User();
-
 
 const Register = () => {
     let name = document.getElementById('name').value;
@@ -64,15 +44,17 @@ const Register = () => {
     let city = document.getElementById('city').value;
     let check_password = document.getElementById('repeat-assword').value;
 
-    if(password == check_password){
-        user.singUp(name, email, username, password, mobile, description,address,pin_code,city);
-        console.log('user: ', user);
-    }else{
-        alert('CHECK YOUR PASSWORD !')
-    }
 
-   
+    if (password == check_password && email.includes('@') && password.length >= 6 && check_password.length >= 6) {
+        singUp(name, email, username, password, mobile, description, address, pin_code, city);
+    } else if (password !== check_password) {
+        alert('The password and confirmation password do not match.')
+    } else if (email.includes('@') === false) {
+        alert('Pls Enter Correct Email Id')
+    } else if (password.length < 6 || check_password.length < 6) {
+        alert('you have to enter at least 6 digit password!')
+    }
 };
 
 let button = document.getElementById('btn');
-button.addEventListener('click',Register);
+button.addEventListener('click', Register);

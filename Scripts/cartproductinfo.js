@@ -102,8 +102,7 @@ function appendData(data){
             moveToCart(el);
 
         })
-
-
+        
         myp_div.append(p_price)
         div.append(img);
 
@@ -116,17 +115,10 @@ function appendData(data){
 appendData(Cdata);
 
 const moveToCart=(el)=>{
-
-
-    
-    
     let  Cartdata=JSON.parse(localStorage.getItem("bag"))||[];
-   
+
     Cartdata.push(el)
     localStorage.setItem("bag",JSON.stringify(Cartdata));
-
- 
-
     window.location.href="cart.html";
 }
 
@@ -135,6 +127,6 @@ const moveToCart=(el)=>{
 let login_data = JSON.parse(localStorage.getItem('login_data'));
 
 let login_logo = document.getElementById('loginID');
-login_logo.innerText=login_data.username;
+login_logo.innerText=login_data[0].username;
    
 

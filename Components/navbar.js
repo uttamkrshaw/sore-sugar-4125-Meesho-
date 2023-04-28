@@ -106,3 +106,6 @@ const navbar = ()=> {
 
 export { navbar }
 
+let data = JSON.parse(localStorage.getItem("login_data"))
+
+console.log("data",data);

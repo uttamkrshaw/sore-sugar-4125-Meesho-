@@ -69,7 +69,6 @@ btn.addEventListener("click",function(){
 })
 
 function movetoPayment(){
-
     window.location.href="payment.html"
 }
 
@@ -79,12 +78,9 @@ function movetoPayment(){
 let Price=0
 function price(data){
     data.forEach(function(el){
-        
-       
         Price=Price+el.price
-       
-        console.log(Price)   
-         document.getElementById("total_price").innerHTML=Price
+        //console.log(Price)   
+        document.getElementById("total_price").innerHTML=Price
     })
 }
 
@@ -92,14 +88,11 @@ function price(data){
 
 price(Cdata)
 
-
-
 const deleteFunc =(i)=>{
 Cdata.splice(i,1)
 localStorage.setItem("bag",JSON.stringify(Cdata))
 window.location.reload();
-
-console.log(i)
+//console.log(i)
 }
 
 
@@ -108,6 +101,6 @@ console.log(i)
 let login_data = JSON.parse(localStorage.getItem('login_data'));
 
 let login_logo = document.getElementById('loginID');
-login_logo.innerText=login_data.username;
+login_logo.innerText=login_data[0].username;
    
 

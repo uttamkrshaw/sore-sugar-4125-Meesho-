@@ -15,7 +15,7 @@ async function searchTerm(sortLH){
         
         //https://cryptic-beach-27653.herokuapp.com/posts
        // let response= await fetch(`https://boiling-brook-19493.herokuapp.com/posts?q=${search}`);
-        let response= await fetch(`https://zara-project.onrender.com/data?q=${search}`);
+        let response= await fetch(`http://localhost:3000/data?q=${search}`);
         let data=await response.json();
         // console.log("data:",data)
 
@@ -143,6 +143,6 @@ function addToCart(el){
 let login_data = JSON.parse(localStorage.getItem('login_data'));
 
 let login_logo = document.getElementById('loginID');
-login_logo.innerText=login_data.username;
+login_logo.innerText=login_data[0].username;
    
 

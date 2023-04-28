@@ -1,5 +1,4 @@
 
-
 #threeDot{
     width: 10%;
     height: 10%;
@@ -19,13 +18,12 @@ display: none;
 width: 8%;
 height: 10%;
 cursor: pointer;
-
 /* border: 1px solid red; */
 }
+
 #main{
 display: flex;
 justify-content: space-between;
-
 /* border: 1px solid black; */
 }
 
@@ -36,20 +34,18 @@ width: 40%;
 border-radius: 10px;
 /* background-color: white; */
 }
+
 #Container1{
     display: none;
-   
-   
 }
-a{
-text-decoration: none;
 
+a{
+color: black;
+text-decoration: none;
 padding: 5px;
 font-size: 12px;
 font-family: Neue-Helvetica, Helvetica, Arial, "sans-serif";
 margin-left: 20px;
-color: black;
-
 }
 
 #women-Contents{
@@ -65,11 +61,6 @@ display: none;
 }
 
 #header{
-
-
-   
-
-
 position: fixed;
 display: flex;
 justify-content: space-between;
@@ -81,8 +72,6 @@ font-family: Neue-Helvetica, Helvetica, Arial, "sans-serif";
 }
 
 #header_right{
-
-
 display: flex;
 justify-content: space-evenly;
 width: 25%;
@@ -95,15 +84,14 @@ padding: 2px;
 
 
 button{
-    font-size: 12px;
+font-size: 12px;
 }
 
 #header_right p{
-    font-size: 13px;
-    font-weight:100;
-    color: black;
+font-size: 13px;
+font-weight:100;
+color: black;
 }
-
 
 
 

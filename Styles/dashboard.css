@@ -2,7 +2,7 @@ body{
     display: flex;
     margin: 0%;
     padding: 0%;
-    border: 0px solid green;
+    /* border: 0px solid green; */
     text-align: center;
     margin-top: 40px;
     
@@ -20,7 +20,6 @@ border: 1px solid rgb(190, 184, 184);
 
 #display{
     /* display: flex; */
-   
     width:70%;
     border: 1px solid rgb(190, 184, 184);
 }

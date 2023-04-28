@@ -2,7 +2,6 @@ import {navbar} from "../Components/navbar.js"
 
 let header=document.querySelector("#header")
 header.innerHTML=navbar()
-// console.log(navbar());
 document.getElementById("logo").onclick=()=>{
     window.location.href="index.html" 
 }
@@ -12,29 +11,14 @@ async function searchTerm(sortLH){
 
     let search=document.getElementById("mysearch").value;
     try{
-        
-        //https://cryptic-beach-27653.herokuapp.com/posts
-       // let response= await fetch(`https://boiling-brook-19493.herokuapp.com/posts?q=${search}`);
-        let response= await fetch(`http://localhost:3000/data?q=${search}`);
+        let response= await fetch(`https://zara-umk6.onrender.com/data?q=${search}`);
         let data=await response.json();
-        // console.log("data:",data)
-
-        // appendData(data);
         filter(data);
     }
     catch(error){
         console.log("error:",error)
     }
 }
-
-//filter functionality-->
-
-// let filter_btn=document.getElementById("price_filter");
-
-// filter_btn.addEventListener("change",function(){
-//     priceFilter();
-// });
-
 
 
 function filter(data){
@@ -113,7 +97,7 @@ function appendData(data){
 let searchFun=document.getElementById("mysearch");
 
 searchFun.addEventListener("input",function(){
-    debouncing(searchTerm(),1000);
+    debouncing(searchTerm(),2000);
 })
 
 let id;
@@ -124,7 +108,6 @@ function debouncing(func,delay){
         clearTimeout(id)
     }
     id=setTimeout(function(){
-
         func();
     },delay)
 
@@ -134,7 +117,6 @@ function addToCart(el){
 
     let cartData=[];
     cartData.push(el);
-
     localStorage.setItem("cart",JSON.stringify(cartData));
 
 }
@@ -145,4 +127,7 @@ let login_data = JSON.parse(localStorage.getItem('login_data'));
 let login_logo = document.getElementById('loginID');
 login_logo.innerText=login_data[0].username;
    
+// let div = document.createElement("div")
+// let logout = document.createElement('a')
+// let admin = document.createElement('a')
 

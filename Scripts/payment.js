@@ -16,15 +16,7 @@ masterCard.addEventListener("click",function(){
 })
 
 function master(){
-
     window.location.href="mastercard.html"
-    // let img=document.getElementById("myimg");
-    // img.innerHTML=null;
-    
-    // let img1=document.createElement("img");
-    // img1.src="https://static.zara.net/static/images/payment/payment/icon-payment-mastercard.svg";
-    // img.append(img1);
-
 }
 
 let america=document.getElementById("amx");

@@ -21,7 +21,7 @@ const Login = async () => {
 
 const getProfile = async (username, password) => {
 
-    let response = await fetch(`http://localhost:3000/userdata`)
+    let response = await fetch(`https://zara-umk6.onrender.com/userdata`)
     let data = await response.json();
     let userdata = data.filter((element) => { return element.username == username && element.password == password})
     if (userdata.length>0) {

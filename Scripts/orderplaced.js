@@ -14,7 +14,7 @@ const press = async()=>{
     }
     console.log("order",data);
 
-    let response = await fetch(`http://localhost:3000/orders`,{
+    let response = await fetch(`https://zara-umk6.onrender.com/orders`,{
         method:"POST",
         body:JSON.stringify(data),
         headers:{

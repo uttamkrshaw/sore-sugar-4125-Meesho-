@@ -18,7 +18,7 @@ const singUp = async (name, email, username, password, mobile, description, addr
     }
         
         try {
-            let response = await fetch(`http://localhost:3000/userdata`, {
+            let response = await fetch(`https://zara-umk6.onrender.com/userdata`, {
             method: "POST",
             body: JSON.stringify(userdata),
             headers: {

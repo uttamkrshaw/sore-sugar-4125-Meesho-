@@ -15,7 +15,7 @@ const send_data = async() => {
     }
     //console.log(data);
 
-    let response = await fetch(`https://zara-project.onrender.com/data`,{
+    let response = await fetch(`https://zara-umk6.onrender.com/data`,{
         method:"POST",
         body:JSON.stringify(data),
         headers:{
